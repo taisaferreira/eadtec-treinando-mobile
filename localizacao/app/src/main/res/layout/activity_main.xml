@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/transparentepretocinza"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mapa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnGps"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="#FFEB3B"
+        android:fontFamily="sans-serif-black"
+        android:text="Obter Localização"
+        android:textColor="#605C5C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTituloLongitude"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="55dp"
+        android:background="@color/cardview_dark_background"
+        android:fontFamily="sans-serif-black"
+        android:text="Longitude:"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLimpar" />
+
+    <TextView
+        android:id="@+id/txtTituloLatitude"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="55dp"
+        android:background="@color/cardview_shadow_start_color"
+        android:fontFamily="sans-serif-black"
+        android:text="Latitude:"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLongitude" />
+
+    <TextView
+        android:id="@+id/txtLatitude"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="55dp"
+        android:background="@color/cardview_shadow_start_color"
+        android:fontFamily="sans-serif-black"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloLatitude" />
+
+    <TextView
+        android:id="@+id/btnTituloAltitude"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="55dp"
+        android:background="@color/cardview_shadow_start_color"
+        android:fontFamily="sans-serif-black"
+        android:text="Altitude:"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLatitude" />
+
+    <TextView
+        android:id="@+id/txtAltitude"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="55dp"
+        android:background="@color/cardview_shadow_start_color"
+        android:fontFamily="sans-serif-black"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTituloAltitude" />
+
+    <TextView
+        android:id="@+id/txtLongitude"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="55dp"
+        android:background="@color/cardview_shadow_start_color"
+        android:fontFamily="sans-serif-black"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloLongitude" />
+
+    <Button
+        android:id="@+id/btnLimpar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFEB3B"
+        android:fontFamily="sans-serif-black"
+        android:text="Limpar"
+        android:textColor="#605C5C"
+        app:layout_constraintEnd_toEndOf="@+id/btnGps"
+        app:layout_constraintStart_toStartOf="@+id/btnGps"
+        app:layout_constraintTop_toBottomOf="@+id/btnGps" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

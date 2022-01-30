@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".kmm">
+
+    <Button
+        android:id="@+id/btnConverterKmM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="33dp"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:text="Converter"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/edtResultado"
+        app:layout_constraintTop_toBottomOf="@+id/edtResultado" />
+
+    <Button
+        android:id="@+id/btnNovoKmM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="14dp"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:text="Novo"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/btnConverterKmM"
+        app:layout_constraintTop_toBottomOf="@+id/btnConverterKmM" />
+
+    <EditText
+        android:id="@+id/edtDigite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/txtDigite"
+        app:layout_constraintTop_toBottomOf="@+id/txtDigite" />
+
+    <TextView
+        android:id="@+id/txtDigite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="169dp"
+        android:text="Digite o valor que deseja converter:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="28dp"
+        android:text="O valor em metros é:"
+        app:layout_constraintBottom_toTopOf="@+id/edtResultado"
+        app:layout_constraintStart_toStartOf="@+id/edtResultado" />
+
+    <EditText
+        android:id="@+id/edtResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="87dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtDigite" />
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="37dp"
+        android:text="KM > METRO"
+        app:layout_constraintBottom_toTopOf="@+id/txtDigite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

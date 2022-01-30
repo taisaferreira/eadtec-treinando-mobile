@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".inicio">
+
+    <Button
+        android:id="@+id/btnKmMetro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="152dp"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:text="KM > METRO"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnMetroKm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:text="METRO > KM"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/btnKmMetro"
+        app:layout_constraintTop_toBottomOf="@+id/btnKmMetro" />
+
+    <Button
+        android:id="@+id/btnMetroCm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="62dp"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:text="METRO > CM"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnMetroKm"
+        app:layout_constraintTop_toBottomOf="@+id/btnMetroKm" />
+
+    <Button
+        android:id="@+id/btnCmMetro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:text="CM > METRO"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnMetroCm"
+        app:layout_constraintTop_toBottomOf="@+id/btnMetroCm" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
